@@ -18,5 +18,5 @@ Then(/^I got the correct "(.*?)" output$/) do |arg1|
 end
 
 Then(/^I stay on reports page$/) do
-  expect(current_url).to eq("http://www.example.com/reports")
+  expect(current_url).to eq("https://www.example.com/reports")
 end

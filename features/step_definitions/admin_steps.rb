@@ -25,7 +25,7 @@ When(/^I should be able to select from PCMOs in "(.*?)"$/) do |name|
   # of a select box with an exact set of values, but has_select? doesn't seem
   # to be working
 
-  # This might help: http://makandracards.com/makandra/6505-issues-with-has_select
+  # This might help: https://makandracards.com/makandra/6505-issues-with-has_select
 
   local_pcmos = Set.new Country.where(name: name).first!.users.pcmos.pluck :id
   options = page.all('#user_pcmo_id optgroup option').reduce(Set.new) do |s,o|

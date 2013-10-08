@@ -194,7 +194,7 @@ When(/^I sign in with a invalid password$/) do
 end
 
 When(/^I ask for a forgotten password$/) do
-  visit 'http://localhost:3000/users/password/new'
+  visit 'https://localhost:3000/users/password/new'
 end
 
 When(/^I give an invalid email$/) do
@@ -222,16 +222,16 @@ end
 
 Then (/^I should be signed in as "(.*?)"$/) do |role|
   if role == "admin"
-    expect(current_url).to eq("http://www.example.com/admin/users/new")
+    expect(current_url).to eq("https://www.example.com/admin/users/new")
   elsif role == "pcmo"
-    expect(current_url).to eq("http://www.example.com/orders/manage")
+    expect(current_url).to eq("https://www.example.com/orders/manage")
   else # PCV
-    expect(current_url).to eq("http://www.example.com/orders")
+    expect(current_url).to eq("https://www.example.com/orders")
   end
 end
 
 Then /^I should be signed in$/ do
-  expect(current_url).to eq("http://www.example.com/orders")
+  expect(current_url).to eq("https://www.example.com/orders")
 end
 
 Then /^I see a successful sign in message$/ do

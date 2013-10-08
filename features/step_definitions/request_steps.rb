@@ -98,18 +98,18 @@ Then(/^I see a nonnumber "(.*?)" request message$/) do |field|
 end
 
 Then(/^I stay on Request Form page$/) do
-  expect(current_url).to eq("http://www.example.com/orders")
+  expect(current_url).to eq("https://www.example.com/orders")
 end
 
 Then(/^I stay on Request Manager page$/) do
-  expect(current_url).to eq("http://www.example.com/orders/manage")
+  expect(current_url).to eq("https://www.example.com/orders/manage")
 end
 
 Then(/^I stay on Admin Home page$/) do
-  expect(current_url).to eq("http://www.example.com/admin/users/new")
+  expect(current_url).to eq("https://www.example.com/admin/users/new")
 end
 
 Then(/^I stay on Place a Request page$/) do
-  expect(current_url).to eq("http://www.example.com/orders")
+  expect(current_url).to eq("https://www.example.com/orders")
 end
 #save_and_open_page
