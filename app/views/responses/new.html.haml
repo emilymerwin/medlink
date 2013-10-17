@@ -2,6 +2,7 @@
   = link_to manage_orders_path do
     %i.icon-caret-left
     %span Back to all Orders
+    %button{:onclick => "TogetherJS(this); return false;"} Collaborate
 
   %p
   = render partial: 'partials/errors', locals: {object: @response}

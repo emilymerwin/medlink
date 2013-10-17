@@ -1,4 +1,5 @@
 %h1= current_user.pcv? ? "Request Form" : "Place an Order"
+%button{:onclick => "TogetherJS(this); return false;"} Collaborate
 
 = form_for @order, html: {class: 'form--order'} do |f|
   = render partial: 'partials/errors', locals: {object: @order}
