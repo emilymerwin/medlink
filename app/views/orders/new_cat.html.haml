@@ -1,0 +1,6 @@
+- form_tag '/sms', :method => :post do
+  %label Enter the recipients mobile number:
+  = text_field_tag "recipient"
+  %label Enter your message:
+  = text_area_tag "message_text"
+  = submit_tag "Send SMS"

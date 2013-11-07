@@ -24,4 +24,6 @@ Medlink::Application.routes.draw do
   root to: 'application#root'
 
   post '/medrequest' => 'twilio#receive'
+
+  resource :sms # for Clickatell
 end
